@@ -356,13 +356,22 @@
       position: relative;
       overflow: hidden;
       border-radius: 10px;
-      margin-top: 1.2rem;
+      margin: 1.2rem auto 0;
+      width: 100%;
+      max-width: 900px;
+      height: 300px;
+      background: #eef2f5;
       box-shadow: 0 3px 12px rgba(0,0,0,0.1);
     }
     .map-container iframe {
+      display: block;
       width: 100%;
-      height: 480px;
+      height: 100%;
       border: 0;
+    }
+    @media (max-width: 768px) {
+      .map-section { padding: 1.25rem; }
+      .map-container { height: 240px; border-radius: 8px; }
     }
     .nap-info-clean {
       display: grid;
@@ -2397,7 +2406,7 @@
       <p>يمكنكم زيارة مقر مركز صيانة الاجهزة المنزلية بمصر الجديدة أو طلب زيارة الفني المنزلي في نطاق مصر الجديدة، مدينة نصر، والقاهرة الجديدة وكافة المحافظات:</p>
       
       <div class="map-container">
-        <iframe src="https://maps.google.com/maps?q=30.1006395,31.3443841+(مركز%20صيانة%20الاجهزة%20المنزلية%20بمصر%20الجديدة)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <iframe src="https://maps.google.com/maps?cid=7856717748330395793&amp;output=embed" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
       </div>
 
       <div style="margin-top: 1rem; text-align: center;">
